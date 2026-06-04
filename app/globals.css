@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background: #333;
+  color: #fff;
+}
+
+:root {
+  --navbar-height: 32px;
+}
+
+main {
+  padding-top: var(--navbar-height);
+  box-sizing: border-box;
+}

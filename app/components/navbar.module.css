@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #333333;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rightGroup {
+  margin-left: auto;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.link:hover:not(.active) {
+  background-color: #111111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 600px) {
+  .ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .rightGroup {
+    margin-left: 0;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }
+}
